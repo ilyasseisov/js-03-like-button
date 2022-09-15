@@ -1,10 +1,14 @@
+// Variables
+
 const likeBtn = document.querySelector('.heart-icon');
 const numberOfLikesElement = document.querySelector('.number-of-likes');
 
 let numberOfLikes = Number.parseInt(numberOfLikesElement.textContent, 10);
 let isLiked = false;
 
-likeBtn.addEventListener('click', () => {
+// Functions
+
+const likeClick = () => {
   if (!isLiked) {
     likeBtn.classList.add('isLiked');
     numberOfLikes++;
@@ -16,4 +20,8 @@ likeBtn.addEventListener('click', () => {
     numberOfLikesElement.textContent = numberOfLikes;
     isLiked = !isLiked;
   }
-});
+};
+
+// Event Listeners
+
+likeBtn.addEventListener('click', likeClick);
