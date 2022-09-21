@@ -33,6 +33,10 @@ body {
     transition: transform 0.25s ease-out;
     transform-origin: 50% 50%;
 
+    .fill-color-shape {
+      fill: transparent;
+    }
+
     &.isLiked {
       filter: drop-shadow(0 3px 5px #c44133);
       .fill-color-shape {

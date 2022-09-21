@@ -40,6 +40,9 @@ body {
   transition: transform 0.25s ease-out;
   transform-origin: 50% 50%;
 }
+.block .heart-icon .fill-color-shape {
+  fill: transparent;
+}
 .block .heart-icon.isLiked {
   filter: drop-shadow(0 3px 5px #c44133);
 }
