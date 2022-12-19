@@ -24,10 +24,11 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  user-select: none;
 }
 @media (max-width: 575.9px) {
   .block {
-    width: 300px;
+    width: 260px;
   }
 }
 .block .heart-icon {
@@ -61,6 +62,7 @@ body {
   top: 53%;
   transform: translate(-80%, -50%);
   color: #292d34;
+  user-select: none;
 }
 
 .jssecrets {
